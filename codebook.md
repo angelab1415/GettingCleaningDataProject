@@ -5,18 +5,18 @@
 
 ### Cleaning the data
 
-1. Read the training and test datafiles and merge them into two seperate training and test table with activity and subject (`y_train\test.txt` and `subject_test\train.txt` respectively) as leading columns.
+1. Read the training and test datafiles from the *UCI HAR Dataset* and merge them into two seperate training and test table with activity and subject (`y_train\test.txt` and `subject_test\train.txt`) as leading columns.
 2. set column names for activity and subject variable to *ac-mean()* and *sub-mean()* for easier grepping of columns in step 5.
 3. set remaining colum names to names listed in `features.txt`.
-4. merge test and training table
-5. Extract mean and standard deviation for each measurment by using the grep function on the column names
+4. merge test and training table.
+5. Extract mean and standard deviation for each measurment by using the grep function on the column names.
 6. change the column names for avtivity and subject back to more desctiptive names.
 7. change the values in the activity column to factors using the labels given in `avtivity_labels.txt`.
 8. write tidy dataset to `tidyDataset.txt`.
 
 ### The Variables
 
-Following lists all variables present in the dataset `tidyDataset.txt`
+variables in the dataset `tidyDataset.txt`
 
 * `activity`: one of six activities performed by each person (WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING)                  
 * `subject`: ID of the test subject (i.e. one of 30 volunteers between 19 and 48 years)    
