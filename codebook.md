@@ -12,7 +12,8 @@
 5. Extract mean and standard deviation for each measurment by using the grep function on the column names.
 6. change the column names for avtivity and subject back to more desctiptive names.
 7. change the values in the activity column to factors using the labels given in `avtivity_labels.txt`.
-8. write tidy dataset to `tidyDataset.txt`.
+8. create tidy dataset with the average of each variable for each activity and subject.
+9. write tidy dataset to `tidyDataset.txt`.
 
 ### The Variables
 

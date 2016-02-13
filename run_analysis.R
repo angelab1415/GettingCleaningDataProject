@@ -70,7 +70,14 @@ colnames(meanStdData)[2] <- "subject"
 meanStdData$activity <- factor(meanStdData$activity, levels = activityType[,1], labels = activityType[,2])
 
 #--------------------------------------------------------
+# create tidy dataset with the average of each variable 
+# for each activity and subject
+#--------------------------------------------------------
+tidyData <- aggregate(meanStdData, by=list(activity = meanStdData$activity, subject=meanStdData$subject), mean)
+tidyData[,3] <- NULL
+tidyData[,3] <- NULL
+#--------------------------------------------------------
 #                  save tidy dataset
 #--------------------------------------------------------
-write.table(meanStdData, './tidyDataset.txt',row.names=TRUE,sep='\t');
+write.table(tidyData, './tidyDataset.txt',row.names=FALSE)
 
